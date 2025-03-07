@@ -1,0 +1,26 @@
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        // Instanciar la clase Recursos
+        Recursos recursos = new Recursos();
+
+        // Llamar al primer método
+        String mensaje = recursos.obtenerMensaje();
+        System.out.println(mensaje);
+
+        // Llamar al segundo método con un valor de edad
+        int edad = 22;
+        String mensajeEdad = recursos.verificarEdad(edad);
+        System.out.println("Edad: " + edad + " - " + mensajeEdad);
+
+        // Llamar al tercer método con dos números enteros
+        int resultadoMultiplicacion = recursos.multiplicar(5, 6);
+        System.out.println("Resultado de la multiplicación: 5 * 6 = " + resultadoMultiplicacion);
+
+        // Llamar al cuarto método con un parámetro X
+        int X = 10;
+        List<Integer> listaNumeros = recursos.generarNumerosHastaX(X);
+        System.out.println("Lista de números del 1 al " + X + ": " + listaNumeros);
+    }
+}
